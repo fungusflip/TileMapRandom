@@ -1,14 +1,14 @@
 using UnityEngine;
 using TMPro;
 
-public class STRTEXT : MonoBehaviour
+public class DEXTEXT : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
 
     void Update()
     {
-        float STR = PlayerPrefs.GetFloat("STR");
+        float DEX = PlayerPrefs.GetFloat("DEX");
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.text = $"STRENGHT {STR}";
+        textMeshPro.text = $"DEX {DEX}";
     }
 }

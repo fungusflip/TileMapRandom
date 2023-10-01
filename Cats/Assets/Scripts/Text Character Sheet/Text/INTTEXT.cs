@@ -1,14 +1,14 @@
 using UnityEngine;
 using TMPro;
 
-public class WISTEXT : MonoBehaviour
+public class INTTEXT : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
 
     void Update()
     {
-        float WIS = PlayerPrefs.GetFloat("WIS");
+        float INT = PlayerPrefs.GetFloat("INT");
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.text = $"WISDOM{WIS}";
+        textMeshPro.text = $"INT {INT}";
     }
 }

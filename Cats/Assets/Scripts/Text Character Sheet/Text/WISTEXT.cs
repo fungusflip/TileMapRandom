@@ -1,14 +1,14 @@
 using UnityEngine;
 using TMPro;
 
-public class DEXTEXT : MonoBehaviour
+public class WISTEXT : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
 
     void Update()
     {
-        float DEX = PlayerPrefs.GetFloat("DEX");
+        float WIS = PlayerPrefs.GetFloat("WIS");
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.text = $"DEXTERITY {DEX}";
+        textMeshPro.text = $"WIS {WIS}";
     }
 }

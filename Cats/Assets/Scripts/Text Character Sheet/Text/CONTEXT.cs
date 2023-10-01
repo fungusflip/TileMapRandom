@@ -9,6 +9,6 @@ public class CONTEXT : MonoBehaviour
     {
         float CON = PlayerPrefs.GetFloat("CON");
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.text = $"CONSTITUTION {CON}";
+        textMeshPro.text = $"CON {CON}";
     }
 }

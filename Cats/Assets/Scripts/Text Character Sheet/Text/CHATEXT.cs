@@ -1,14 +1,14 @@
 using UnityEngine;
 using TMPro;
 
-public class INTTEXT : MonoBehaviour
+public class CHATEXT : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
 
     void Update()
     {
-        float INT = PlayerPrefs.GetFloat("INT");
+        float CHA = PlayerPrefs.GetFloat("CHA");
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.text = $"INTELLECT {INT}";
+        textMeshPro.text = $"CHA {CHA}";
     }
 }
