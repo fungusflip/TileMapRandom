@@ -16391,7 +16391,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2108867138}
         m_TargetAssemblyTypeName: StatChange, Assembly-CSharp
-        m_MethodName: UpStat
+        m_MethodName: DownStat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17486,7 +17486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 763674858}
   followSpeed: 5
-  minBounds: {x: 0, y: 0}
+  minBounds: {x: 100, y: 100}
   maxBounds: {x: 1000, y: 1000}
   zoomSpeed: 1
   minZoomSize: 1
