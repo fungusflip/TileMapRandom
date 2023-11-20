@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class KeyPresses : MonoBehaviour
 {
     [SerializeField] private GameObject characterSheet;
+    [SerializeField] private GameObject inventory;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -14,9 +15,14 @@ public class KeyPresses : MonoBehaviour
             // Add your code for pausing the game, opening a menu, or other actions.
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             characterSheet.SetActive(true);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            inventory.SetActive(true);
         }
     }
 }
